@@ -133,8 +133,8 @@
                     </p>
                     <p class="flex items-center gap-4">
                         <i class="fas fa-phone-alt text-brand-lightblue text-2xl"></i>
-                        <!-- AQUÍ PUEDES CAMBIAR EL TEXTO VISUAL DEL NÚMERO -->
-                        <span id="display-phone-text" class="font-bold tracking-wider">Pendiente...</span>
+                        <!-- AQUÍ SE MOSTRARÁ TU NÚMERO AUTOMÁTICAMENTE -->
+                        <span id="display-phone-text" class="font-bold tracking-wider">Cargando...</span>
                     </p>
                     <p class="flex items-center gap-4">
                         <i class="fab fa-whatsapp text-brand-lightgreen text-3xl"></i>
@@ -202,10 +202,9 @@
 
     <script>
         // ==========================================
-        // 🔴 CAMBIA EL NÚMERO DE WHATSAPP AQUÍ 🔴
+        // NÚMERO DE WHATSAPP ACTUALIZADO
         // ==========================================
-        // Asegúrate de incluir el código de país (ej. 52 para México) sin el signo de +
-        const MI_NUMERO_WHATSAPP = "525939180019"; 
+        const MI_NUMERO_WHATSAPP = "525528735621"; 
         
         // ==========================================
         
@@ -219,7 +218,7 @@
             document.getElementById('btn-contact-wa').href = waLink;
             document.getElementById('floating-whatsapp').href = waLink;
             
-            // Actualizar el texto visible del número (formato simple)
+            // Actualizar el texto visible del número (quita el '52' de México para que se vea normal)
             document.getElementById('display-phone-text').textContent = MI_NUMERO_WHATSAPP.replace('52', '');
             
             cargarProductos();
